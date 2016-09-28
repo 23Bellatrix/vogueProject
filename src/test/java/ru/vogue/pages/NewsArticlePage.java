@@ -12,7 +12,7 @@ import static ru.consult.WebDriverUtils.openPage;
 public class NewsArticlePage {
 
     public NewsArticlePage (){
-        openPage("http://www.vogue.ru/fashion/news/"); // тут должен быть другой урл, унивексальный для каждой статьи
+    //    openPage("http://www.vogue.ru/fashion/news/"); // тут должен быть другой урл, унивексальный для каждой статьи
         PageFactory.initElements(getDriver(), this);
     }
 

@@ -14,6 +14,7 @@ import static org.testng.Assert.assertTrue;
 
 import static ru.consult.WebDriverUtils.getDriver;
 import static ru.consult.WebDriverUtils.openPage;
+import static ru.consult.WebDriverUtils.saveScreenshot;
 
 /**
  * Created by Lenovo on 24.09.2016.
@@ -53,6 +54,7 @@ public class HomePage {
     public HomePage (){
         openPage("http://www.vogue.ru/");
         PageFactory.initElements(getDriver(), this);
+        saveScreenshot();
     }
 
     public void findArticlesBlocks(){
